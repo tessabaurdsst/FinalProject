@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="comic.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Akronim|Londrina+Outline|Londrina+Shadow|Londrina+Sketch|Londrina+Solid:100,300,400,900|Nosifer|Zilla+Slab+Highlight:400,700|Lato" rel="stylesheet">
+  <script type="text/javascript" src="comic.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/(version#)/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!---<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">--->
+  <meta charset="utf-8">
+  <meta name="description" content="!!!!!!!">
+  <title>Baur Comics</title>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<header id = "ontop">
+  <div class = "banner">
+    <img id = "crown" src = "Crown1.png">
+    <img id = "crown2" src = "Crown2.png">
+    <h1>
+      Baur Comics
+    </h1>
+  </div>
+  <nav class = "topnav">
+    <ul>
+      <li> <a href= "Home.html"> Home </a> </li>
+      <li> <a href = "Portfolio.html"> Portfolio </a> </li>
+      <li> <a href = "About.html"> About </a> </li>
+      <li id = "comics"> <a href = "Comics.html"> Comics </a>
+          <a class = "droplist" href = "Eden.html"> Eden </a>
+      </li>
+      <li id = "Posts"> <a href = "Posts.html"> Posts </a> </li>
+      <li> <a href = "Contact.html"> Contact </a> </li>
+      <li id = "search">
+        <input type="text" name="search" onkeyup="myFunction()" placeholder="Search.."/>
+        <button class="btn"><i class="material-icons">search</i></button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>
+    POSTS
+  </h2>
+
+
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SAKGwKC/3d-dark-ocean-loop_npdxrf_tl__F0000.png');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-size: 25px;
+}
+
+.middle {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:30px; color:white"></p>
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2050 15:37:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+</main>
+<footer>
+  👑2018👑
+</footer>
+</body>
